@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <title>Weather app</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/styles.css" />
+    <title>WeatherApplication</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="weatherApp">
+        <div class="input-group">
+          <form id="searching">
+            <input
+              type="text"
+              placeholder="Enter your city"
+              autocomplete="off"
+              autofocus="on"
+              id="city-input"
+            />
+            <button class="button" type="submit" id="change-city">🔍</button>
+            <button class="geo-button" type="submit" id="geoposition">🌐</button>
+          </form>
+        </div>
+        <h1 class="city" id="city">Auburn, WA</h1>
+        <div class="todayDate" id="date-today">
+          Saturday, 25 February, 06:15 PM
+        </div>
+        <ul id="additional">
+          <li>sunrise:<span id="sunUp"><strong>07:02</span> </strong></li>
+          <li>sunset:<span id="sunDown"><strong>05:47</span> </strong></li>
+          <li>humidity:<span id="humidity"><strong>86</span>%</strong></li>
+          <li>wind:<span id="wind"><strong>20</span></strong> mph</li>
+        </ul>
+        <div class="todayWeather">
+          <p class="currentTemp" id="temperature">
+            37
+            <span class="units">
+              <a href="#" id="celsius-link">°C</a> |
+              <a href="#" id="fahrenheit-link">°F</a>
+            </span>
+          </p>
+          <img src="rain.png" alt="Rain" />
+          <p id="currentIcon">cloudy, rain</p>
+        </div>
+        <div class="row">
+          <div class="col weekDay">
+            <img src="cloud.png" alt="Cloudy" />
+            <p class="weekWeather">Sun</p>
+            <p class="weekTemp"><strong>42°F</strong></p>
+          </div>
+          <div class="col weekDay">
+            <img src="cloud.png" alt="Drizzle" />
+            <p class="weekWeather">Mon</p>
+            <p class="weekTemp"><strong>42°F</strong></p>
+          </div>
+          <div class="col weekDay">
+            <img src="cloud.png" alt="Snow sign" />
+            <p class="weekWeather">Tue</p>
+            <p class="weekTemp"><strong>42°F</strong></p>
+          </div>
+          <div class="col weekDay">
+            <img src="cloud.png" alt="Sun" />
+            <p class="weekWeather">Wed</p>
+            <p class="weekTemp"><strong>42°F</strong></p>
+          </div>
+          <div class="col weekDay">
+            <img src="cloud.png" alt="Light snow sign" />
+            <p class="weekWeather">Thur</p>
+            <p class="weekTemp"><strong>42°F</strong></p>
+          </div>
+          <div class="col weekDay">
+            <img src="cloud.png" alt="Cloudy" />
+            <p class="weekWeather">Fri</p>
+            <p class="weekTemp"><strong>42°F</strong></p>
+          </div>
+          <div class="col weekDay">
+            <img src="cloud.png" alt="Drizzle" />
+            <p class="weekWeather">Sat</p>
+            <p class="weekTemp"><strong>42°F</strong></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
