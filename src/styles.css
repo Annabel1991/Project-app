@@ -11,7 +11,7 @@ body {
   border-radius: 6px;
   display: block;
   box-shadow: 2px 2px 5px 1px #ceb7ed;
-  background-image: url(main1.png);
+  background: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
   background-size: cover;
   padding: 5px;
   margin: 10px auto;
@@ -88,7 +88,7 @@ ul {
   border-radius: 8px;
   box-shadow: 2px 2px 5px 1px #ceb7ed;
   text-align: center;
-  background-image: url(main2.png);
+  background: radial-gradient(circle at 10% 20%, rgb(248, 219, 219) 0%, rgb(229, 248, 250) 90%);
   max-height: 120px;
 }
 
