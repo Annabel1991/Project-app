@@ -11,8 +11,12 @@ body {
   border-radius: 6px;
   display: block;
   box-shadow: 2px 2px 5px 1px #ceb7ed;
-  background: rgb(238,174,202);
-background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+  background: rgb(238, 174, 202);
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
   background-size: cover;
   padding: 5px;
   margin: 10px auto;
@@ -62,11 +66,15 @@ ul {
   top: 10px;
   text-align: right;
   right: 20px;
+  margin: 0;
   font-family: monospace;
   font-size: 16px;
   font-weight: 600;
   list-style: none;
   color: azure;
+}
+p {
+  margin: 0;
 }
 
 .todayWeather {
@@ -89,8 +97,12 @@ ul {
   border-radius: 8px;
   box-shadow: 2px 2px 5px 1px #ceb7ed;
   text-align: center;
-  background: rgb(238,174,202);
-background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+  background: rgb(238, 174, 202);
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
   max-height: 120px;
 }
 
@@ -118,7 +130,13 @@ background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 
   font-weight: 500;
   font-size: 18px;
 }
-a {
+#celsius-link {
+  font-family: monospace;
+  font-weight: 600;
+  font-size: 20px;
+  color: azure;
+}
+#fahrenheit-link {
   font-family: monospace;
   font-weight: 600;
   font-size: 20px;
@@ -132,9 +150,23 @@ form#search {
   right: 20px;
   position: fixed;
 }
-footer{
+#footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 2rem;
   font-family: monospace;
   font-weight: 600;
   font-size: 10px;
-  color: azure;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.2rem;
+  color: #006abd;
+}
+input[type="text"] {
+  border: none;
+  border-bottom: 2px solid #c3b1e1;
+  background-color: #a7b8e3;
 }
