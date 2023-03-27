@@ -72,7 +72,7 @@ ul {
   text-align: center;
   font-family: monospace;
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 800;
   color: azure;
   margin: 0;
 }
@@ -89,6 +89,7 @@ ul {
   box-shadow: 2px 2px 5px 1px #ceb7ed;
   text-align: center;
   background-image: url(main2.png);
+  max-height: 120px;
 }
 
 .col {
@@ -118,12 +119,12 @@ ul {
 a {
   font-family: monospace;
   font-weight: 600;
-  font-size: 24px;
+  font-size: 20px;
   color: azure;
 }
 form#search {
   color: #fff;
-  border-color: #c3b1e1;
+  border: 1px solid #c3b1e1;
   display: block;
   top: 15px;
   right: 20px;
