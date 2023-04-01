@@ -14,7 +14,7 @@ if (hours > 12) {
 }
 let minutes = String(now.getMinutes()).padStart(2, "0");
 
-let weekdays = [
+let days = [
   "Sunday",
   "Monday",
   "Tuesday",
@@ -23,7 +23,7 @@ let weekdays = [
   "Friday",
   "Saturday"
 ];
-let day = weekdays[now.getDay()];
+let day = days[now.getDay()];
 
 let currentDate = document.querySelector("#date");
 currentDate.innerHTML = `${day}, ${hours}:${minutes}${meridian}`;
