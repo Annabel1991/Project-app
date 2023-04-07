@@ -87,7 +87,7 @@ function displayTemperature(response) {
 }
 function getForecast(coordinates) {
   console.log(coordinates);
-  let apiKey = "331a83f170c6f2e4ef360t13b388b6bo";
+  let apiKey = "dt229oa84d9dabc42ffabf7f5e40f673";
   let apiUrl = `https://api.shecodes.io/weather/v1/forecast?lon=${coordinates.longitude}&lat=${coordinates.latitude}&key=${apiKey}&units=imperial`;
 
   console.log(apiUrl);
@@ -95,7 +95,7 @@ function getForecast(coordinates) {
 }
 function search(event) {
   event.preventDefault();
-  let apiKey = "331a83f170c6f2e4ef360t13b388b6bo";
+  let apiKey = "dt229oa84d9dabc42ffabf7f5e40f673";
   let city = document.querySelector("#city-input").value.trim();
   let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=imperial`;
   axios.get(apiUrl).then(displayTemperature);
@@ -110,7 +110,7 @@ function getCurrentLocation(event) {
 }
 
 function searchLocation(position) {
-  let apiKey = "331a83f170c6f2e4ef360t13b388b6bo";
+  let apiKey = "dt229oa84d9dabc42ffabf7f5e40f673";
   let lat = position.coords.latitude;
   let lon = position.coords.longitude;
   let apiUrl = `https://api.shecodes.io/weather/v1/current?lon=${lon}&lat=${lat}&key=${apiKey}&units=imperial`;
