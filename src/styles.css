@@ -21,7 +21,7 @@ body {
   padding: 5px;
   margin: 10px auto;
   max-width: 650px;
-  max-height: 450px;
+  height: 450px;
 }
 
 .city {
@@ -41,43 +41,11 @@ body {
   top: 20px;
   padding: 5px;
   bottom: 17px;
-  text-align: left;
   left: 20px;
   font-family: monospace;
   font-weight: 600;
   font-size: 20px;
   color: azure;
-}
-
-button:hover {
-  color: #fff;
-  background-color: #c3b1e1;
-  border: solid 1px whitesmoke;
-}
-button {
-  transition: ease-in-out 0.2s;
-  background-color: #c3b1e1;
-  border-color: #c3b1e1;
-  color: #fff;
-  border-radius: 8px;
-}
-ul {
-  position: relative;
-  text-align: left;
-  font-family: monospace;
-  font-size: 20px;
-  font-weight: 600;
-  list-style: none;
-  color: azure;
-}
-
-col {
-  text-align: left;
-  margin-top: 20px;
-  padding-top: 10px;
-  font-family: monospace;
-  color: azure;
-  margin: 0;
 }
 #icon {
   display: block;
@@ -128,6 +96,20 @@ a:visited {
   text-decoration: none;
   color: grey;
 }
+
+button:hover {
+  color: #fff;
+  background-color: #c3b1e1;
+  border: solid 1px whitesmoke;
+}
+button {
+  transition: ease-in-out 0.2s;
+  background-color: #c3b1e1;
+  border-color: #c3b1e1;
+  color: #fff;
+  border-radius: 8px;
+}
+
 #current-temp {
   font-size: 40px;
   line-height: 2;
@@ -135,8 +117,38 @@ a:visited {
   font-weight: 400;
   padding-left: 20px;
 }
+
 #description {
   padding-left: 20px;
   font-weight: 500;
   font-size: 26px;
+}
+ul {
+  position: relative;
+  text-align: left;
+  font-family: monospace;
+  font-size: 20px;
+  font-weight: 600;
+  list-style: none;
+  color: azure;
+}
+
+.weather-forecast {
+  margin-top: 20px;
+  text-align: center;
+  color: white;
+}
+
+.weather-forecast-weekDay {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.weather-forecast-temperature-min {
+  opacity: 0.5;
+}
+
+.weather-forecast-temperatures {
+  font-size: 18px;
+  font-weight: 400;
 }
