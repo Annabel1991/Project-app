@@ -55,11 +55,14 @@ function formatDay(timestamp) {
 
 function displayTemperature(response) {
   console.log(response);
+
   fahrenheitTemperature = response.data.temperature.current;
-    console.log(fahrenheitTemperature);
+  console.log(fahrenheitTemperature);
   let weatherData = response.data;
   document.querySelector("#city").innerHTML = response.data.city;
-   document.querySelector("#current-temp").innerHTML = Math.round(fahrenheitTemperature);
+  document.querySelector("#current-temp").innerHTML = Math.round(
+    fahrenheitTemperature
+  );
   document.querySelector("#humidity").innerHTML =
     response.data.temperature.humidity;
   document.querySelector("#wind").innerHTML = Math.round(
@@ -84,7 +87,7 @@ function displayTemperature(response) {
 }
 function getForecast(coordinates) {
   console.log(coordinates);
-  let apiKey = "dt229oa84d9dabc42ffabf7f5e40f673";
+  let apiKey = "331a83f170c6f2e4ef360t13b388b6bo";
   let apiUrl = `https://api.shecodes.io/weather/v1/forecast?lon=${coordinates.longitude}&lat=${coordinates.latitude}&key=${apiKey}&units=imperial`;
 
   console.log(apiUrl);
@@ -92,7 +95,7 @@ function getForecast(coordinates) {
 }
 function search(event) {
   event.preventDefault();
-  let apiKey = "dt229oa84d9dabc42ffabf7f5e40f673";
+  let apiKey = "331a83f170c6f2e4ef360t13b388b6bo";
   let city = document.querySelector("#city-input").value.trim();
   let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=imperial`;
   axios.get(apiUrl).then(displayTemperature);
@@ -107,10 +110,10 @@ function getCurrentLocation(event) {
 }
 
 function searchLocation(position) {
-  let apiKey = "dt229oa84d9dabc42ffabf7f5e40f673";
+  let apiKey = "331a83f170c6f2e4ef360t13b388b6bo";
   let lat = position.coords.latitude;
   let lon = position.coords.longitude;
-  let apiUrl = `https://api.shecodes.io/weather/v1/current?lon=${lon}&lat=${lat}&key=${apiKey}`;
+  let apiUrl = `https://api.shecodes.io/weather/v1/current?lon=${lon}&lat=${lat}&key=${apiKey}&units=imperial`;
   axios.get(apiUrl).then(displayTemperature);
 }
 
@@ -177,3 +180,4 @@ function displayForecast(response) {
   forecastHTML = forecastHTML + `</div>`;
   forecastElement.innerHTML = forecastHTML;
 }
+

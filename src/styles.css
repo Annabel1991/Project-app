@@ -1,7 +1,10 @@
 body {
+  font-family: sans-serif;
+}
+body {
   display: flex;
   justify-content: space-between;
-  background-color: whitesmoke;
+  background: url(main2.png);
   color: azure;
   font-family: monospace;
 }
@@ -11,12 +14,8 @@ body {
   border-radius: 6px;
   display: block;
   box-shadow: 2px 2px 5px 1px #ceb7ed;
-  background: rgb(238, 174, 202);
-  background: radial-gradient(
-    circle,
-    rgba(238, 174, 202, 1) 0%,
-    rgba(148, 187, 233, 1) 100%
-  );
+  background: rgb(195, 174, 238);
+  background: radial-gradient(circle, #f6ddd9 0%, #e8c8d5 100%);
   background-size: cover;
   padding: 5px;
   margin: 10px auto;
@@ -141,14 +140,14 @@ ul {
 
 .weather-forecast-weekDay {
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 700;
 }
 
 .weather-forecast-temperature-min {
-  opacity: 0.5;
+  opacity: 0.7;
 }
 
 .weather-forecast-temperatures {
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 600;
 }
