@@ -4,7 +4,8 @@ body {
 body {
   display: flex;
   justify-content: space-between;
-  background: url(main2.png);
+  background: rgb(174, 196, 238);
+  background: radial-gradient(circle, #d5c7c5 0%, #d5c4ee 100%);
   color: azure;
   font-family: monospace;
 }
