@@ -4,8 +4,7 @@ body {
 body {
   display: flex;
   justify-content: space-between;
-  background: rgb(174, 196, 238);
-  background: radial-gradient(circle, #d5c7c5 0%, #d5c4ee 100%);
+  background: #9FD4DE;
   color: azure;
   font-family: monospace;
 }
@@ -14,9 +13,8 @@ body {
   border: 1px solid #c3b1e1;
   border-radius: 6px;
   display: block;
-  box-shadow: 2px 2px 5px 1px #ceb7ed;
-  background: rgb(195, 174, 238);
-  background: radial-gradient(circle, #f6ddd9 0%, #e8c8d5 100%);
+  box-shadow: 2px 2px 5px 1px #668a91;
+  background-image: url("wall.png");
   background-size: cover;
   padding: 5px;
   margin: 10px auto;
@@ -56,7 +54,7 @@ body {
 
 form#search {
   color: #fff;
-  border: 1px solid #c3b1e1;
+  border: 1px solid #9FD4DE;
   display: block;
   top: 15px;
   right: 20px;
@@ -79,8 +77,8 @@ form#search {
 }
 input[type="text"] {
   border: none;
-  border-bottom: 2px solid #c3b1e1;
-  background-color: #a7b8e3;
+  border-bottom: 2px solid #9FD4DE;
+  background-color: #64a2ae;
 }
 .units {
   position: relative;
@@ -99,13 +97,13 @@ a:visited {
 
 button:hover {
   color: #fff;
-  background-color: #c3b1e1;
+  background-color: #64A2AE;
   border: solid 1px whitesmoke;
 }
 button {
   transition: ease-in-out 0.2s;
-  background-color: #c3b1e1;
-  border-color: #c3b1e1;
+  background-color: #418e9e;
+  border-color: #9FD4DE;
   color: #fff;
   border-radius: 8px;
 }
